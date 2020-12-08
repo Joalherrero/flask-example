@@ -1,3 +1,3 @@
 - New Repository Flask Example Python - Docker image
-- commit example
-- commit example
+- requirements.txt
+- folder k8s-deploy
