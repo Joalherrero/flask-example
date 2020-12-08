@@ -1,11 +1,14 @@
-FROM python:alpine3.11
+FROM python:2.7
 
-COPY . /app
 WORKDIR /app
-
-RUN pip install -U Flask
 
 EXPOSE 8080
 
-ENTRYPOINT ["python"]
-CMD ["app.py"]
+ENV NAME World
+
+CMD ["python", "app.py"]
+
+ADD requirements.txt /app/requirements.txt
+RUN pip install -r requirements.txt
+
+ADD app.py /app/app.py
