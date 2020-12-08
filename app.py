@@ -13,7 +13,7 @@ def primer_html():
 
     <html>
         <body>
-        <h1>Hello Flask</h1>
+        <h1>Flask</h1>
         </body>
     </html>
 
